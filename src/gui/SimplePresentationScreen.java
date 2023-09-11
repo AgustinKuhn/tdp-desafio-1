@@ -3,6 +3,7 @@ package gui;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
+import java.awt.Toolkit;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -42,7 +43,7 @@ public class SimplePresentationScreen extends JFrame {
 		setResizable(false);
 		setContentPane(contentPane);
 		
-	
+		setIconImage(Toolkit.getDefaultToolkit().getImage(SimplePresentationScreen.class.getResource("/images/tdp.png")));
 		
 		init();
 	}
@@ -50,8 +51,7 @@ public class SimplePresentationScreen extends JFrame {
 	private void init() {
 		// Tabbed Pane to student personal data
 
-		ImageIcon icono = new ImageIcon("/images/tdp.png");
-	    setIconImage(icono.getImage());
+		
 		// Informacion del alumno
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(5, 5, 430, 216);
