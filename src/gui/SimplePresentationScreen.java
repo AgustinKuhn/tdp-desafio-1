@@ -42,8 +42,7 @@ public class SimplePresentationScreen extends JFrame {
 		setResizable(false);
 		setContentPane(contentPane);
 		
-		ImageIcon icono = new ImageIcon("/images/tdp.png");
-	    setIconImage(icono.getImage());
+	
 		
 		init();
 	}
@@ -51,13 +50,15 @@ public class SimplePresentationScreen extends JFrame {
 	private void init() {
 		// Tabbed Pane to student personal data
 
+		ImageIcon icono = new ImageIcon("/images/tdp.png");
+	    setIconImage(icono.getImage());
 		// Informacion del alumno
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(5, 5, 430, 216);
 		tabInformation = new JPanel();
 		tabInformation.setPreferredSize(new Dimension(425, 275));
 		tabbedPane.addTab("Informacion del alumno", null, tabInformation,
-				"Muestra la informaci�n declarada por el alumno");
+				"Muestra la informacion declarada por el alumno");
 
 		JLabel LabelLU = new JLabel("LU");
 
