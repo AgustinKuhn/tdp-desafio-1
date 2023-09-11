@@ -1,0 +1,10 @@
+# Excluir todos los archivos de configuración de la IDE (por ejemplo, Eclipse)
+.classpath
+.project
+
+# Excluir la carpeta de archivos compilados
+/bin/
+
+# Excluir archivos y directorios generados por la IDE o el sistema
+.settings/
+
